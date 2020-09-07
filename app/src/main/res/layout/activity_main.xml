@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rgMainTab"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rgMainTab"
+        android:background="@color/bg_Gray" />
+
+    <RadioGroup
+        android:id="@+id/rgMainTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rbMainTabHome"
+            style="@style/radioMainTabStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_main_tab_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rbMainTabJinHuoDan"
+            style="@style/radioMainTabStyle"
+            android:drawableTop="@drawable/selector_main_tab_four"
+            android:text="我的" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
